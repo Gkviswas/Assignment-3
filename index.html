@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-3</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/fba2353c69.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="container mx-auto">
+      <!--  navbar  -->
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <a><span>Home</span></a>
+              </li>
+
+              <li><a>About</a></li>
+              <li><a>Page</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-5xl font-bold">Hockey<span>'</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li>
+              <a><span>Home</span> </a>
+            </li>
+
+            <li><a>About</a></li>
+            <li><a>Page</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_5_6)">
+              <path
+                d="M3 10C3 10.9193 3.18106 11.8295 3.53284 12.6788C3.88463 13.5281 4.40024 14.2997 5.05025 14.9497C5.70026 15.5998 6.47194 16.1154 7.32122 16.4672C8.1705 16.8189 9.08075 17 10 17C10.9193 17 11.8295 16.8189 12.6788 16.4672C13.5281 16.1154 14.2997 15.5998 14.9497 14.9497C15.5998 14.2997 16.1154 13.5281 16.4672 12.6788C16.8189 11.8295 17 10.9193 17 10C17 9.08075 16.8189 8.1705 16.4672 7.32122C16.1154 6.47194 15.5998 5.70026 14.9497 5.05025C14.2997 4.40024 13.5281 3.88463 12.6788 3.53284C11.8295 3.18106 10.9193 3 10 3C9.08075 3 8.1705 3.18106 7.32122 3.53284C6.47194 3.88463 5.70026 4.40024 5.05025 5.05025C4.40024 5.70026 3.88463 6.47194 3.53284 7.32122C3.18106 8.1705 3 9.08075 3 10Z"
+                stroke="#89898B"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M21 21L15 15"
+                stroke="#89898B"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_5_6">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <button class="btn btn-secondary ms-5 mybtn">Get Ticket</button>
+        </div>
+      </div>
+      <!-- carousel -->
+      <div class="container">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="images/1.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="images/2.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="images/3.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="images//4.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container mx-auto">
+      <!-- Hockeys Club Sections -->
+      <div class="section">
+        <hr class="hr1 mt-4" />
+        <div class="text-start mb-5 md:text-center">
+          <h2 class="text-5xl font-bold mb-6 mt-4">
+            Professional Hockeys Club
+          </h2>
+          <p class="text-xl pColor">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+        <hr class="hr1" />
+        <div class="grid mt-10 grid-cols-1 md:grid-cols-2 gap-2">
+          <div class="top-banner rounded-xl">
+            <div class="banner-text">
+              <h2 class="text-5xl ms-4">Junior Program</h2>
+              <p class="text-xl ms-4">
+                Dolor sit amet consectetur. Ut urna diam quis sagittis. <br />
+                Elit elit enim sagittis turpis in magna. Id et sed euismod
+                <br />
+                natoque amet nunc morbi nulla. Tortor congue sed et in..
+              </p>
+
+              <button class="btn btn-secondary ms-5 mybtn">
+                Register Now!
+              </button>
+            </div>
+          </div>
+          <div class="top-banner1 rounded-xl">
+            <div class="banner-text">
+              <h2 class="text-5xl ms-4">Teenager Program</h2>
+              <p class="text-xl ms-4">
+                Dolor sit amet consectetur. Ut urna diam quis sagittis. <br />
+                Elit elit enim sagittis turpis in magna. Id et sed euismod
+                <br />
+                natoque amet nunc morbi nulla. Tortor congue sed et in..
+              </p>
+
+              <button class="btn btn-secondary ms-5 mybtn">
+                Register Now!
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 grid-md-1 mt-5">
+          <div class="top-banner2 rounded-xl">
+            <div class="banner-text">
+              <h2 class="text-5xl ms-4">Professional Program</h2>
+              <p class="text-xl ms-4">
+                Dolor sit amet consectetur. Ut urna diam quis sagittis. <br />
+                Elit elit enim sagittis turpis in magna. Id et sed euismod
+                <br />
+                natoque amet nunc morbi nulla. Tortor congue sed et in..
+              </p>
+
+              <button class="btn btn-secondary ms-5 mybtn">
+                Register Now!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Our New Products -->
+      <section class="mt-10 mb-20">
+        <hr class="hr1 mt-30" />
+
+        <div class="text-start mt-5 md:text-center">
+          <h2 class="text-5xl font-bold mb-6 mt-4">Our New Products</h2>
+          <p class="text-xl pColor">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+        <hr class="hr1 mt-10" />
+        <!-- card -->
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="card border h-64 card-side bg-base-100 shadow-xl">
+            <figure>
+              <img class="px-8" src="./Images/5.png" alt="Movie" />
+            </figure>
+            <div class="card-body">
+              <!-- icons -->
+              <div class="flex gap-40 justify-center items-center">
+                <div class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_6_192)">
+                      <path
+                        d="M12 17.7498L5.82799 20.9948L7.00699 14.1218L2.00699 9.25477L8.90699 8.25477L11.993 2.00177L15.079 8.25477L21.979 9.25477L16.979 14.1218L18.158 20.9948L12 17.7498Z"
+                        fill="#F99808"
+                        stroke="#F99808"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_6_192">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(0 -0.000244141)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="ms-3 mt-1">20</p>
+                </div>
+
+                <div class="flex">
+                  <i class="fa-regular fa-eye me-3 mt-1"></i>
+                  <p>20</p>
+                </div>
+                <div class="flex">
+                  <i class="fa-regular fa-heart me-3 mt-1"></i>
+                  <p>200</p>
+                </div>
+              </div>
+              <!-- sas -->
+              <h2 class="card-title mt-5">World Cup Flags Football</h2>
+              <p class="text-xl pColor">
+                Dolor sit amet consectetur. Ut urna diam quis sagittis.
+              </p>
+              <div class="flex justify-center items-center">
+                <p class="font-bold text-xl"><span>Price - $22.00</span></p>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p class="text-xl pColor ms-4">Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+          <div class="card border h-64 card-side bg-base-100 shadow-xl">
+            <figure>
+              <img class="px-8" src="./Images/6.png" alt="Movie" />
+            </figure>
+            <div class="card-body">
+              <!-- icons -->
+              <div class="flex gap-40 justify-center items-center">
+                <div class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_6_192)">
+                      <path
+                        d="M12 17.7498L5.82799 20.9948L7.00699 14.1218L2.00699 9.25477L8.90699 8.25477L11.993 2.00177L15.079 8.25477L21.979 9.25477L16.979 14.1218L18.158 20.9948L12 17.7498Z"
+                        fill="#F99808"
+                        stroke="#F99808"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_6_192">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(0 -0.000244141)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="ms-3 mt-1">20</p>
+                </div>
+
+                <div class="flex">
+                  <i class="fa-regular fa-eye me-3 mt-1"></i>
+                  <p>20</p>
+                </div>
+                <div class="flex">
+                  <i class="fa-regular fa-heart me-3 mt-1"></i>
+                  <p>200</p>
+                </div>
+              </div>
+              <!-- sas -->
+              <h2 class="card-title mt-5">World Cup Flags Football</h2>
+              <p class="text-xl pColor">
+                Dolor sit amet consectetur. Ut urna diam quis sagittis.
+              </p>
+              <div class="flex justify-center items-center">
+                <p class="font-bold text-xl"><span>Price - $22.00</span></p>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p class="text-xl pColor ms-4">Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ... -->
+
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="card border h-64 card-side bg-base-100 shadow-xl">
+            <figure>
+              <img class="px-8" src="./Images/7.png" alt="Movie" />
+            </figure>
+            <div class="card-body">
+              <!-- icons -->
+              <div class="flex gap-40 justify-center items-center">
+                <div class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_6_192)">
+                      <path
+                        d="M12 17.7498L5.82799 20.9948L7.00699 14.1218L2.00699 9.25477L8.90699 8.25477L11.993 2.00177L15.079 8.25477L21.979 9.25477L16.979 14.1218L18.158 20.9948L12 17.7498Z"
+                        fill="#F99808"
+                        stroke="#F99808"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_6_192">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(0 -0.000244141)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="ms-3 mt-1">20</p>
+                </div>
+
+                <div class="flex">
+                  <i class="fa-regular fa-eye me-3 mt-1"></i>
+                  <p>20</p>
+                </div>
+                <div class="flex">
+                  <i class="fa-regular fa-heart me-3 mt-1"></i>
+                  <p>200</p>
+                </div>
+              </div>
+              <!-- sas -->
+              <h2 class="card-title mt-5">World Cup Flags Football</h2>
+              <p class="text-xl pColor">
+                Dolor sit amet consectetur. Ut urna diam quis sagittis.
+              </p>
+              <div class="flex justify-center items-center">
+                <p class="font-bold text-xl"><span>Price - $22.00</span></p>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p class="text-xl pColor ms-4">Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+          <div class="card border h-64 card-side bg-base-100 shadow-xl">
+            <figure>
+              <img class="px-8" src="./Images/8.png" alt="Movie" />
+            </figure>
+            <div class="card-body">
+              <!-- icons -->
+              <div class="flex gap-40 justify-center items-center">
+                <div class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_6_192)">
+                      <path
+                        d="M12 17.7498L5.82799 20.9948L7.00699 14.1218L2.00699 9.25477L8.90699 8.25477L11.993 2.00177L15.079 8.25477L21.979 9.25477L16.979 14.1218L18.158 20.9948L12 17.7498Z"
+                        fill="#F99808"
+                        stroke="#F99808"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_6_192">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(0 -0.000244141)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="ms-3 mt-1">20</p>
+                </div>
+
+                <div class="flex">
+                  <i class="fa-regular fa-eye me-3 mt-1"></i>
+                  <p>20</p>
+                </div>
+                <div class="flex">
+                  <i class="fa-regular fa-heart me-3 mt-1"></i>
+                  <p>200</p>
+                </div>
+              </div>
+              <!-- sas -->
+              <h2 class="card-title mt-5">World Cup Flags Football</h2>
+              <p class="text-xl pColor">
+                Dolor sit amet consectetur. Ut urna diam quis sagittis.
+              </p>
+              <div class="flex justify-center items-center">
+                <p class="font-bold text-xl"><span>Price - $22.00</span></p>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p class="text-xl pColor ms-4">Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ......... -->
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="card border h-64 card-side bg-base-100 shadow-xl">
+            <figure>
+              <img class="px-8" src="./Images/9.png" alt="Movie" />
+            </figure>
+            <div class="card-body">
+              <!-- icons -->
+              <div class="flex gap-40 justify-center items-center">
+                <div class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_6_192)">
+                      <path
+                        d="M12 17.7498L5.82799 20.9948L7.00699 14.1218L2.00699 9.25477L8.90699 8.25477L11.993 2.00177L15.079 8.25477L21.979 9.25477L16.979 14.1218L18.158 20.9948L12 17.7498Z"
+                        fill="#F99808"
+                        stroke="#F99808"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_6_192">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(0 -0.000244141)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="ms-3 mt-1">20</p>
+                </div>
+
+                <div class="flex">
+                  <i class="fa-regular fa-eye me-3 mt-1"></i>
+                  <p>20</p>
+                </div>
+                <div class="flex">
+                  <i class="fa-regular fa-heart me-3 mt-1"></i>
+                  <p>200</p>
+                </div>
+              </div>
+              <!-- sas -->
+              <h2 class="card-title mt-5">World Cup Flags Football</h2>
+              <p class="text-xl pColor">
+                Dolor sit amet consectetur. Ut urna diam quis sagittis.
+              </p>
+              <div class="flex justify-center items-center">
+                <p class="font-bold text-xl"><span>Price - $22.00</span></p>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p class="text-xl pColor ms-4">Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+          <div class="card border h-64 card-side bg-base-100 shadow-xl">
+            <figure>
+              <img class="px-8" src="./Images/10.png" alt="Movie" />
+            </figure>
+            <div class="card-body">
+              <!-- icons -->
+              <div class="flex gap-40 justify-center items-center">
+                <div class="flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <g clip-path="url(#clip0_6_192)">
+                      <path
+                        d="M12 17.7498L5.82799 20.9948L7.00699 14.1218L2.00699 9.25477L8.90699 8.25477L11.993 2.00177L15.079 8.25477L21.979 9.25477L16.979 14.1218L18.158 20.9948L12 17.7498Z"
+                        fill="#F99808"
+                        stroke="#F99808"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_6_192">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(0 -0.000244141)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <p class="ms-3 mt-1">20</p>
+                </div>
+
+                <div class="flex">
+                  <i class="fa-regular fa-eye me-3 mt-1"></i>
+                  <p>20</p>
+                </div>
+                <div class="flex">
+                  <i class="fa-regular fa-heart me-3 mt-1"></i>
+                  <p>200</p>
+                </div>
+              </div>
+              <!-- sas -->
+              <h2 class="card-title mt-5">World Cup Flags Football</h2>
+              <p class="text-xl pColor">
+                Dolor sit amet consectetur. Ut urna diam quis sagittis.
+              </p>
+              <div class="flex justify-center items-center">
+                <p class="font-bold text-xl"><span>Price - $22.00</span></p>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p class="text-xl pColor ms-4">Delivery Fee : Free</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Clients Question-->
+      <section>
+        <hr class="hr1 mt-30" />
+
+        <div class="text-start mt-5 md:text-center">
+          <h2 class="text-5xl font-bold mb-6 mt-4">Clients Question</h2>
+          <p class="text-xl pColor mb-10">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat <br />
+            dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+        <hr class="hr1 mt-30" />
+        <!-- accodion -->
+        <div class="grid grid-cols-1 md:grid-cols-2 border rounded-xl mt-20">
+          <div>
+            <img class="w-4/5 px-5 mt-6 mb-6" src="./Images/11.png" alt="" />
+          </div>
+          <div>
+            <div class="collapse collapse-plus">
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div class="collapse-title mt-6 text-2xl font-bold">
+                Our Equipment
+              </div>
+              <div class="collapse-content">
+                <p class="text-xl pColor mb-10">
+                  Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                  elit enim sagittis turpis in magna.
+                </p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus divide-y divide-slate-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-2xl font-bold">
+                Hockey Training
+              </div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus divide-y divide-slate-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-2xl font-bold">
+                Private Lessons
+              </div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus divide-y divide-slate-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-2xl font-bold">Ski Touring</div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus divide-y divide-slate-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-2xl font-bold">Pricings</div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus divide-y divide-slate-200">
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title text-2xl font-bold">Booking</div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Get In Touch -->
+      <section class="mt-20">
+        <hr class="hr1 mt-30" />
+
+        <div class="text-start mt-5 md:text-center">
+          <h2 class="text-5xl font-bold mb-6 mt-4">Get In Touch</h2>
+          <p class="text-xl pColor mb-10">
+            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+            turpis placerat <br />
+            dolor. Purus urna in sit nullam proin.
+          </p>
+        </div>
+        <hr class="hr1 mt-30" />
+        <!-- contact -->
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 ms-10">
+          <div
+            class="border rounded-xl border-solid md:border-solid py-4 md:py-8 px-4 md:px-24 sm:w-1/2 md:w-4/6"
+          >
+            <div class="border-none myCard">
+              <img class="w-12" src="./Images/Group 1171275317.png" alt="" />
+              <p class="mt-4 myColor">Phone Number :</p>
+              <h5 class="font-bold text-xl">(+62) 123-321-543</h5>
+            </div>
+            <!--  -->
+            <div class="border-none myCard1 mt-7">
+              <img class="w-12" src="./Images/Group 1171275318.png" alt="" />
+              <p class="mt-4 myColor">Email :</p>
+              <h5 class="font-bold text-xl">hockeys@support.com</h5>
+            </div>
+            <!--  -->
+            <div class="border-none myCard2 mt-7">
+              <img class="w-12" src="./Images/Group 1171275321.png" alt="" />
+              <p class="mt-4 myColor">Location:</p>
+              <h5 class="font-bold text-xl">152/1 Mohakhali Wireless Gate</h5>
+            </div>
+          </div>
+          <!-- input field -->
+          <div>
+            <!-- main -->
+            <div class="grid grid-cols-1 md:grid-cols-2">
+              <div>
+                <h5 class="font-bold text-xl">Your Name</h5>
+                <input
+                  type="text"
+                  class="inputFiled p-4"
+                  placeholder="Enter your full name"
+                />
+              </div>
+              <div>
+                <h5 class="font-bold text-xl">Your Email</h5>
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  class="inputFiled p-4"
+                  placeholder="Enter your email"
+                />
+              </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 mt-7">
+              <div>
+                <h5 class="font-bold text-xl mb-2">Subject</h5>
+                <input
+                  type="text"
+                  class="inputFiled p-4"
+                  placeholder="Enter your subject"
+                />
+              </div>
+              <div>
+                <h5 class="font-bold text-xl mb-2">Phone Number</h5>
+                <input
+                  type="text"
+                  class="inputFiled p-4"
+                  placeholder="Enter your phone number"
+                />
+              </div>
+            </div>
+            <h5 class="font-bold text-xl mt-2">Message</h5>
+            <div class="myText mt-3">
+              <textarea
+                class="myText textarea"
+                placeholder="Write your message"
+              ></textarea>
+            </div>
+            <div>
+              <button class="myNewBtn mt-3 text-slate-200">Send Message</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Social Media -->
+
+      <section class="socialInfo mt-10">
+        <div class="text-center">
+          <h2 class="text-2xl font-bold mb-6 mt-4">Social Media</h2>
+        </div>
+
+        <div class="flex justify-center gap-2">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="mt-10">
+      <div class="grid md:grid-cols-4 md:px-64 py-24">
+        <div class="grid grid-cols-1">
+          <h4 class="text-2xl font-bold">Get In Touch</h4>
+          <p class="text-xl mt-3 pera">
+            Dit amet consectetur. Condimentum adipiscing aliquam turpis placerat
+            dolor. Purus urna in sit nullam proin.
+          </p>
+          <div class="flex mt-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M21.75 6.75V17.25C21.75 17.8467 21.5129 18.419 21.091 18.841C20.669 19.2629 20.0967 19.5 19.5 19.5H4.5C3.90326 19.5 3.33097 19.2629 2.90901 18.841C2.48705 18.419 2.25 17.8467 2.25 17.25V6.75M21.75 6.75C21.75 6.15326 21.5129 5.58097 21.091 5.15901C20.669 4.73705 20.0967 4.5 19.5 4.5H4.5C3.90326 4.5 3.33097 4.73705 2.90901 5.15901C2.48705 5.58097 2.25 6.15326 2.25 6.75M21.75 6.75V6.993C21.75 7.37715 21.6517 7.75491 21.4644 8.0903C21.2771 8.42569 21.0071 8.70754 20.68 8.909L13.18 13.524C12.8252 13.7425 12.4167 13.8582 12 13.8582C11.5833 13.8582 11.1748 13.7425 10.82 13.524L3.32 8.91C2.99292 8.70854 2.72287 8.42669 2.53557 8.0913C2.34827 7.75591 2.24996 7.37815 2.25 6.994V6.75"
+                stroke="#FF4240"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p class="ms-4">hockeys@support.com</p>
+          </div>
+          <div class="flex mt-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M2.25 6.75C2.25 15.034 8.966 21.75 17.25 21.75H19.5C20.0967 21.75 20.669 21.5129 21.091 21.091C21.5129 20.669 21.75 20.0967 21.75 19.5V18.128C21.75 17.612 21.399 17.162 20.898 17.037L16.475 15.931C16.035 15.821 15.573 15.986 15.302 16.348L14.332 17.641C14.05 18.017 13.563 18.183 13.122 18.021C11.4849 17.4191 9.99815 16.4686 8.76478 15.2352C7.53141 14.0018 6.58087 12.5151 5.979 10.878C5.817 10.437 5.983 9.95 6.359 9.668L7.652 8.698C8.015 8.427 8.179 7.964 8.069 7.525L6.963 3.102C6.90214 2.85869 6.76172 2.6427 6.56405 2.48834C6.36638 2.33397 6.1228 2.25008 5.872 2.25H4.5C3.90326 2.25 3.33097 2.48705 2.90901 2.90901C2.48705 3.33097 2.25 3.90326 2.25 4.5V6.75Z"
+                stroke="#FF4240"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p class="ms-4">(+62) 123-321-543</p>
+          </div>
+        </div>
+        <!--  -->
+        <div class="grid grid-cols-2 md:ms-24">
+          <div>
+            <h4>Company</h4>
+
+            <p class="pera">About</p>
+            <p class="pera">Leadership</p>
+            <p class="pera">Careers</p>
+            <p class="pera">News & Article</p>
+            <p class="pera">Legal Notice</p>
+          </div>
+
+          <div class="md:ms-24">
+            <h4>Support</h4>
+
+            <p class="pera">Help</p>
+            <p class="pera">FAQ</p>
+            <p class="pera">Ticket</p>
+            <p class="pera">Contact</p>
+          </div>
+        </div>
+        <div class="grid sm:grid-cols-1 md:ms-auto">
+          <div>
+            <h4>Services</h4>
+
+            <p class="pera">Academy</p>
+            <p class="pera">Group Lesson</p>
+            <p class="pera">Private Lesson</p>
+            <p class="pera">Hockeys for kids</p>
+            <p class="pera">Hockeys for Adult</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
